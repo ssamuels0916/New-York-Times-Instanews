@@ -77,6 +77,8 @@ table {
   font-style: italic; }
 
 /** FONTS **/
+/******* GLOBAL STYLING **********/
+/** Sass variables **/
 * {
   box-sizing: border-box;
   outline: none; }
@@ -98,6 +100,7 @@ p {
 a {
   text-decoration: none; }
 
+/******* GLOBAL STYLING **********/
 .container {
   margin: 0 auto;
   height: auto;
@@ -105,27 +108,29 @@ a {
 
 .wrapper {
   max-width: 600px;
-  padding: 10%;
-  height: 400px;
+  height: 80vh;
+  padding: 2%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center; }
+
+.shrinkHeader img {
+  height: 100px; }
 
 .logo {
   padding: 5% 10%; }
 
-.articles {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+.loader-section {
+  margin: 0 auto;
+  text-align: center; }
+
+.loader {
+  display: none;
+  height: 100px; }
 
 .news {
   display: -ms-flexbox;
@@ -136,7 +141,7 @@ a {
       justify-content: space-around;
   width: 100%;
   height: auto;
-  margin-bottom: 10%; }
+  margin-bottom: 5%; }
 
 .inner-article {
   position: relative; }
@@ -162,7 +167,8 @@ a {
   bottom: 0; }
 
 .page-footer {
-  text-align: center; }
+  text-align: center;
+  padding-top: 10%; }
 
 .copyright {
   color: #c2c2c2;
@@ -176,13 +182,28 @@ a {
 
 @media screen and (min-width: 600px) {
   .wrapper {
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-flow: row wrap;
-        flex-flow: row wrap; }
+        flex-flow: row wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    padding-top: 2%; }
+  .shrinkHeader {
+    height: 30vh;
+    transition: all 1s; }
+    .shrinkHeader img {
+      height: 100px; }
   .news li {
-    width: 50%; } }
+    width: 50%; }
+  .copyright {
+    text-align: left; } }
 
 @media screen and (min-width: 1240px) {
+  .wrapper {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    width: 100%; }
   .news li {
-    width: 25%; } }
+    width: 25%; }
+  .copyright {
+    text-align: left; } }
