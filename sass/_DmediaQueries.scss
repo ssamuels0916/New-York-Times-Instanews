@@ -7,7 +7,7 @@ $tablet-width: 600px;
   }
 }
 
-$desktop-width: 1240px;
+$desktop-width: 1000px;
 @mixin desktop {
   @media (min-width: $desktop-width) {
     @content;

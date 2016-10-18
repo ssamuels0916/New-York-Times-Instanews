@@ -125,7 +125,7 @@ a {
           align-items: center;
       width: 100%;
       padding-top: 2%; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     .wrapper {
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -191,7 +191,7 @@ a {
   @media (min-width: 600px) {
     .news li {
       width: 50%; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     .news li {
       width: 25%; } }
   .news li p {
@@ -222,7 +222,7 @@ a {
   @media (min-width: 600px) {
     .copyright {
       text-align: left; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     .copyright {
       text-align: left; } }
 
