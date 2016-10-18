@@ -110,15 +110,13 @@ a {
 .wrapper {
   max-width: 600px;
   height: 80vh;
-  padding-top: 5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  text-align: center;
-  margin-bottom: 10%; }
+  text-align: center; }
   @media (min-width: 600px) {
     .wrapper {
       -ms-flex-flow: row wrap;
@@ -204,6 +202,8 @@ a {
 .abstract {
   position: absolute;
   bottom: 0; }
+  .abstract p {
+    padding: 4%; }
 
 /** footer  **/
 .page-footer {
@@ -217,7 +217,8 @@ a {
   font-weight: 100;
   font-style: normal;
   font-style: .7rem;
-  padding-left: 4%; }
+  padding-left: 4%;
+  padding-bottom: 5%; }
   @media (min-width: 600px) {
     .copyright {
       text-align: left; } }
