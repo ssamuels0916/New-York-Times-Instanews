@@ -1,0 +1,28 @@
+/** Sass base stying **/
+
+* {
+   box-sizing: border-box;
+   outline:none;
+}
+
+body{
+  line-height: 2; 
+  background-color: black;
+
+}
+
+html{
+  font-size: 16px;
+
+}
+
+p {
+  @include font-styling;
+  font-size: 1rem;
+  color:#ffffff;
+ 
+
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+
+/** footer  **/
+
+.page-footer{
+text-align: center;
+padding-top: 5%;
+padding-bottom: 1%;
+
+}
+.copyright {
+  color:#c2c2c2;
+  @include font-styling;
+  font-style: .7rem;
+  padding-left: 4%;
+
+  @include tablet {
+     text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
