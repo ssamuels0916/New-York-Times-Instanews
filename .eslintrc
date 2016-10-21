@@ -11,6 +11,7 @@
     "eqeqeq": 0,
     "no-eq-null": 0,
     "guard-for-in": 1,
+    "no-console": 1,
     "no-empty": 1,
     "quotes": [ 1, "single"]
   },
