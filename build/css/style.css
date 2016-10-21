@@ -104,8 +104,7 @@ a {
 /** header styling **/
 .container {
   margin: 0 auto;
-  height: auto;
-  max-width: 1240px; }
+  height: auto; }
 
 .wrapper {
   max-width: 600px;
@@ -147,7 +146,7 @@ a {
         height: 80px; } }
 
 .logo {
-  padding: 5% 10%; }
+  padding: 10%; }
 
 .loader-section {
   margin: 0 auto;
@@ -201,9 +200,15 @@ a {
 
 .abstract {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  overflow: hidden; }
   .abstract p {
-    padding: 4%; }
+    padding: 4%;
+    transition: 0.30s;
+    /*   animation speed */ }
+
+.abstract:hover .p {
+  margin-top: 0em; }
 
 /** footer  **/
 .page-footer {
