@@ -1,7 +1,6 @@
 $( document ).ready(function() {
           //console.log('hope');
-$("#selection").heapbox();
-	$('#selection').on('change', function(event){
+$('#selection').heapbox({'onChange':function(){
        $('.loader').show();
 
        //when you select category, shrinks header
@@ -83,8 +82,9 @@ $("#selection").heapbox();
 .always(function(){
           $('.loader').hide();
     }); 
-	
+}
 });
+
 
 });
 
