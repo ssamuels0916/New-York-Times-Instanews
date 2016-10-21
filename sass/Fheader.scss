@@ -4,8 +4,7 @@
 .container{
   margin: 0 auto;
   height: auto;
-  max-width: 1240px;
-  
+  //removing max width removes the padding on the sides (the original site did not have it)
 }
 
 .wrapper{
@@ -48,7 +47,7 @@ transition: all 1s;
 }
 
 .logo{
-  padding: 5% 10%;
+  padding: 10%; // I think we didn't need the 5% there
 
 }
 

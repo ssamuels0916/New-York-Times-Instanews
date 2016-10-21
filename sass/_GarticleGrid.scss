@@ -41,7 +41,14 @@
 .abstract{
   position: absolute;
   bottom: 0;
+  overflow: hidden;
   p{
     padding: 4%;
+    transition: 0.30s;
+/*   animation speed */
   }
+}
+
+.abstract:hover .p{
+  margin-top: 0em;
 }
