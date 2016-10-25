@@ -21,7 +21,7 @@ var plumberErrorHandler = {
 };
 
 gulp.task('scripts', function () {
-    gulp.src('./js/*.js')
+    gulp.src('./js/script.js')
         .pipe(plumber(plumberErrorHandler))
         .pipe(uglify())
         .pipe(plumber.stop())
@@ -78,7 +78,7 @@ gulp.task('lint', function () {
     // Also, Be sure to return the stream from the task; 
     // Otherwise, the task may end before the stream has finished. 
     return gulp.src([
-            './js/*.js',
+            './js/script.js',
             '!node_modules/**'
         ])
         .pipe(plumber())

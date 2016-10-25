@@ -154,7 +154,9 @@ a {
   .loader-section .loader {
     display: none;
     height: 100px; }
-
+.heapbox a{
+  text-align: center;
+}
 #selection {
   width: 30%;
   margin-bottom: 2%; }
@@ -201,14 +203,8 @@ a {
 .abstract {
   position: absolute;
   bottom: 0;
-  overflow: hidden; }
-  .abstract p {
-    padding: 4%;
-    transition: 0.30s;
-    /*   animation speed */ }
-
-.abstract:hover .p {
-  margin-top: 0em; }
+  
+}
 
 /** footer  **/
 .page-footer {

@@ -85,7 +85,6 @@ $('#selection').heapbox({'onChange':function(){
 }
 });
 
-
 });
 
 
