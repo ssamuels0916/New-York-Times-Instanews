@@ -154,9 +154,7 @@ a {
   .loader-section .loader {
     display: none;
     height: 100px; }
-.heapbox a{
-  text-align: center;
-}
+
 #selection {
   width: 30%;
   margin-bottom: 2%; }
@@ -174,7 +172,8 @@ a {
       justify-content: space-around;
   width: 100%;
   height: auto;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  padding-top: 32px; }
 
 .inner-article {
   position: relative; }
@@ -203,8 +202,14 @@ a {
 .abstract {
   position: absolute;
   bottom: 0;
-  
-}
+  overflow: hidden; }
+  .abstract p {
+    padding: 4%;
+    transition: 0.30s;
+    /*   animation speed */ }
+
+.abstract:hover .p {
+  margin-top: 0em; }
 
 /** footer  **/
 .page-footer {
