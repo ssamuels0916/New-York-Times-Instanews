@@ -1,6 +1,6 @@
 /** media queries **/
 
-$tablet-width: 600px;
+$tablet-width: 598px;
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;
