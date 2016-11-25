@@ -20,7 +20,7 @@ var plumberErrorHandler = {
 
 };
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
     gulp.src('./js/script.js')
         .pipe(plumber(plumberErrorHandler))
         .pipe(uglify())
@@ -33,7 +33,7 @@ gulp.task('scripts', function () {
 });
 
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
     gulp.src('./sass/style.scss')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sass())
@@ -48,21 +48,21 @@ gulp.task('sass', function () {
 });
 
 
-gulp.task('browser', function () {
+gulp.task('browser', function() {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: './'
         }
     });
-    gulp.watch(["build/css/*.css", "build/js/*.js"]).on('change', browserSync.reload);
+    gulp.watch(['build/css/*.css', 'build/js/*.js']).on('change', browserSync.reload);
 });
 
 
 
 
 //creating named task list that will watch these files
-gulp.task('watch', function () {
+gulp.task('watch', function() {
     gulp.watch('*.html', ['browser']);
     gulp.watch('*.css', ['browser']);
     gulp.watch('js/*.js', ['scripts', 'lint']);
@@ -72,7 +72,7 @@ gulp.task('watch', function () {
 
 
 //corrects syntax errors in js
-gulp.task('lint', function () {
+gulp.task('lint', function() {
     // ESLint ignores files with "node_modules" paths. 
     // So, it's best to have gulp ignore the directory as well. 
     // Also, Be sure to return the stream from the task; 
