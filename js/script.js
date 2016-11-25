@@ -7,8 +7,6 @@ $(function() {
             //when you select category, shrinks header
             $('.wrapper').addClass('shrinkHeader');
 
-            event.preventDefault();
-
             //API article grid 
             var $news = $('.news');
 
